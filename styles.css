@@ -37,3 +37,15 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+/* Colors */
+:root {
+  --yellow: rgb(244, 208, 78);
+  --gray-950: rgb(17, 17, 17);
+  --gray-500: rgb(107, 107, 107);
+  --white: rgb(255, 255, 255);
+}
+
+body {
+  color: var(--gray-950);
+}
