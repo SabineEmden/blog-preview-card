@@ -37,8 +37,17 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+/* end of CSS reset */
 
-/* Colors */
+@font-face {
+  font-family: "Figtree";
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.woff2)
+    format("woff2-variations");
+}
+
 :root {
   --yellow: rgb(244, 208, 78);
   --gray-950: rgb(17, 17, 17);
@@ -47,5 +56,6 @@ h6 {
 }
 
 body {
+  font-family: "Figtree", sans-serif;
   color: var(--gray-950);
 }
