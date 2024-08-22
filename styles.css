@@ -37,8 +37,8 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-/* end of CSS reset */
 
+/* General content styles and layout */
 @font-face {
   font-family: "Figtree";
   font-weight: 300 900;
@@ -57,12 +57,87 @@ h6 {
 
 body {
   font-family: "Figtree", sans-serif;
-  font-size: 1rem;
+  /* 0.875rem => 0.875 * 16px = 14px */
+  font-size: 0.875rem;
   font-weight: 500;
   color: var(--gray-950);
   background-color: var(--yellow);
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100svh;
   padding: 24px;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+/* Blog preview card */
+.preview {
+  background-color: var(--white);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: 8px 8px black;
+  max-width: 24rem;
+  padding: 24px;
+}
+
+.preview > img {
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+p.topic {
+  font-weight: 800;
+  background-color: var(--yellow);
+  width: fit-content;
+  border-radius: 4px;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.preview a {
+  text-decoration: none;
+  outline-color: transparent;
+}
+
+.preview a:link,
+.preview a:visited {
+  color: var(--gray-950);
+}
+
+.preview a:focus,
+.preview a:hover,
+.preview a:active {
+  color: var(--yellow);
+}
+
+.preview h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--gray-500);
+  margin-bottom: 16px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.author img {
+  width: 2.5rem;
+  aspect-ratio: 1;
+}
+.author p {
+  font-weight: 800;
 }
