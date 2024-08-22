@@ -94,6 +94,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [MDN variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide) - This guide is a comprehensive introduction to variable fonts.
 - [Getting started with Variable fonts on the web](https://www.youtube.com/watch?v=0fVymQ7SZw0) by Kevin Powell on YouTube - This video is another good introduction to variable fonts.
+- [Wakamai Fondue](https://wakamaifondue.com/) - This site helped me find out what my font can do via a simple drag-and-drop inspection interface.
 - [MDN article on styling links](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links) -
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
