@@ -16,11 +16,18 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
+
+The brief for this project was to get the blog preview card looking as close to the design as possible, based on the following assets:
+
+- Figma design files
+- Mobile & desktop layouts
+- Style guide with colors and fonts
+- Optimized image assets
+- Variable and static font files
+- HTML file with pre-written contents
 
 Users should be able to:
 
@@ -41,7 +48,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://sabineemden.github.io/blog-preview-card/
 
 ## My process
 
@@ -49,16 +56,19 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Self-hosted variable web fonts
+- Fluid typography
 
 ### What I learned
+
+Four topics in this challenge were new to me:
+
+- Variable web fonts,
+- CSS custom properties,
+- Styling links in different states,
+- Fluid typography.
+
+Of these four, fluid typography is the most complex. The article [Modern Fluid Typography Using CSS Clamp](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) by Adrian Bece for Smashing Magazine gives a good introduction to the topic.
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
@@ -86,34 +96,23 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I could not find an online tool to subset the variable font (and keep it variable). I may have to look into command line tools, like [glyphhanger](https://github.com/zachleat/glyphhanger) by Zach Leatherman.
 
 ### Useful resources
 
-- [MDN variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide) - This guide is a comprehensive introduction to variable fonts.
+- [MDN variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide) - This guide gives a comprehensive introduction to variable fonts.
 - [Getting started with Variable fonts on the web](https://www.youtube.com/watch?v=0fVymQ7SZw0) by Kevin Powell on YouTube - This video is another good introduction to variable fonts.
-- [Wakamai Fondue](https://wakamaifondue.com/) - This site helped me find out what my font can do via a simple drag-and-drop inspection interface.
-- [MDN article on styling links](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links) -
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Wakamai Fondue](https://wakamaifondue.com/) - This site helped me find out what my font file can do via a simple drag-and-drop inspection interface.
+- [MDN article on styling links](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links) - This article gives a good introduction to styling links in all their different states.
+- [Modern Fluid Typography Using CSS Clamp](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) by Adrian Bece for Smashing Magazine - This article gives a comprehensive introduction to fluid typography.
+- [Addressing Accessibility Concerns With Using Fluid Type](https://www.smashingmagazine.com/2023/11/addressing-accessibility-concerns-fluid-type/) by Maxwell Barvian for Smashing Magazine - This article addresses accessibility concerns mentioned in the previous article.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
 
 ## Acknowledgments
 
 This project uses Josh Comeau's [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/).
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I used [Fluid Style](https://fluid.style/) by Maxwell Barvian to generate the `clamp()` function for the fluid typography font sizes.
