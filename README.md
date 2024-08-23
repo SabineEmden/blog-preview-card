@@ -70,29 +70,29 @@ Four topics in this challenge were new to me:
 
 Of these four, fluid typography is the most complex. The article [Modern Fluid Typography Using CSS Clamp](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) by Adrian Bece for Smashing Magazine gives a good introduction to the topic.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The Figma file gives three font sizes for the desktop design: 24px (1.5rem), 16px (1rem), and 14px (0.875rem). These are the upper font size limits for the fluid typography. The card component has a width of 384px (24rem) on desktop. With a padding of 24px on the body, the card component starts to shrink at a viewpoint width of 432px (27rem). This is the upper breakpoint.
 
-To see how you can add code snippets, see below:
+The mobile design in the Figma file has a viewport width of 375px (23.4375rem). I have rounded that to 23rem (368px) for the lower breakpoint. For the lower font size limits, I used the browser developer tools to find the font sizes that were closest to the mobile design: 1.2rem (19.2px), 0.84rem (13.4px) and 0.75rem (12px). These are the lower font size limits.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I used the [Fluid Typography Tool](https://fluidtypography.com/) to work out the CSS `camp()` functions.
+
+For font sizes between 1.2rem (19.2px) and 1.5rem (24px):
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+font-size: clamp(1.2rem, 7.5vw + -0.525rem, 1.5rem);
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+For font sizes between 0.84rem (13.44px) and 1rem (16px):
+
+```css
+font-size: clamp(0.84rem, 4vw + -0.08rem, 1rem);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+For font sizes between 0.75rem (12px) and 0.875rem (14px):
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+font-size: clamp(0.75rem, 3.125vw + 0.031rem, 0.875rem);
+```
 
 ### Continued development
 
@@ -114,5 +114,3 @@ I could not find an online tool to subset the variable font (and keep it variabl
 ## Acknowledgments
 
 This project uses Josh Comeau's [CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/).
-
-I used [Fluid Style](https://fluid.style/) by Maxwell Barvian to generate the `clamp()` function for the fluid typography font sizes.
