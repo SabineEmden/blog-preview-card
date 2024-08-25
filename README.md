@@ -55,24 +55,22 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Self-hosted variable web fonts
 - Fluid typography
 
 ### What I learned
 
-Four topics in this challenge were new to me:
+Three things in this challenge were new to me:
 
 - Variable web fonts,
-- CSS custom properties,
 - Styling links in different states,
 - Fluid typography.
 
-Of these four, fluid typography is the most complex. The article [Modern Fluid Typography Using CSS Clamp](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) by Adrian Bece for Smashing Magazine gives a good introduction to the topic.
+Of these three, fluid typography is the most complex. The article [Modern Fluid Typography Using CSS Clamp](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) by Adrian Bece for Smashing Magazine gives a good introduction to the topic.
 
-The Figma file gives three font sizes for the desktop design: 24px (1.5rem), 16px (1rem), and 14px (0.875rem). These are the upper font size limits for the fluid typography. The card component has a width of 384px (24rem) on desktop. With a padding of 24px on the body, the card component starts to shrink at a viewpoint width of 432px (27rem). This is the upper breakpoint.
+The Figma file for this project gives three font sizes for the desktop design: 24px (1.5rem), 16px (1rem), and 14px (0.875rem). These are the upper font size limits for the fluid typography. The card component has a width of 384px (24rem) on desktop. With 24px padding on the body, the card component starts to shrink at a viewpoint width of 432px (27rem). This is the upper breakpoint.
 
-The mobile design in the Figma file has a viewport width of 375px (23.4375rem). I have rounded that to 23rem (368px) for the lower breakpoint. For the lower font size limits, I used the browser developer tools to find the font sizes that were closest to the mobile design: 1.2rem (19.2px), 0.84rem (13.4px) and 0.75rem (12px). These are the lower font size limits.
+The mobile design in the Figma file has a viewport width of 375px (23.4375rem). I rounded that to 23rem (368px) for the lower breakpoint. For the lower font size limits, I used the browser developer tools to find the font sizes that were closest to the mobile design: 1.2rem (19.2px), 0.84rem (13.4px) and 0.75rem (12px). These are the lower font size limits.
 
 I used the [Fluid Typography Tool](https://fluidtypography.com/) to work out the CSS `camp()` functions.
 
