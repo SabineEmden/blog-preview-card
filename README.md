@@ -59,8 +59,6 @@ Three things in this challenge were new to me:
 - Styling links in different states,
 - Fluid typography.
 
-Of these three, fluid typography is the most complex.
-
 This project has slightly smaller fonts sizes in the mobile layout than in the desktop layout. Fluid typography uses the CSS clamp function to reduce font sizes for smaller screens without using media queries.
 
 The Figma file for this project gives three font sizes for the desktop design: 24px (1.5rem), 16px (1rem), and 14px (0.875rem). These are the upper font size limits for the fluid typography. The card component has a width of 384px (24rem) on desktop. With 24px padding on the body, the card component starts to shrink at a viewpoint width of 432px (27rem). This is the upper breakpoint.
